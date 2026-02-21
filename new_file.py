@@ -17,3 +17,17 @@ def revcom(s):
   
   
 reverse(basecomplement)
+
+#Alternatively, we can use biopython 
+
+#first install Biopython
+
+pip install biopython
+
+#from biopyton use reverse_complement() 
+from Bio.Seq import Seq
+
+my_nucseq = Seq("ATGCGTA")
+reverse_comp_seq = my_nucseq.reverse_complement()
+print(reverse_comp_seq)
+
